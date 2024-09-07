@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=custom-plymouth-theme
+Description=Custom video theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/custom-plymouth-theme/frames
+ScriptFile=/usr/share/plymouth/themes/custom-plymouth-theme/video.script
