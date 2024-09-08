@@ -1,6 +1,6 @@
 {
   pkgs,
-  logo ? ./default-logo.gif,
+  logo ? ./assets/default-logo.gif,
 }:
 let
   out-dir = "$out/share/plymouth/themes/plymouth-gif-theme";
@@ -8,7 +8,7 @@ in
 pkgs.stdenv.mkDerivation {
   pname = "plymouth-gif-theme";
   version = "1.0.1";
-  src = ./.;
+  src = ./theme;
   dontBuild = true;
   nativeBuildInputs = [ pkgs.ffmpeg ];
 
